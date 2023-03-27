@@ -1,0 +1,15 @@
+FROM node:16.13.1-stretch
+ARG NODE_ENV=staging
+
+#RUN apt update && apt install -y zip
+
+WORKDIR /app
+COPY . .
+
+RUN yarn install
+RUN yarn global add serve
+RUN yarn run build
+
+EXPOSE 5000
+
+CMD [ "serve", "-l", "5000", "-s", "build" ]

@@ -1,0 +1,27 @@
+export const APIS = {
+  SUBMIT_DATA: "/save",
+  THANK_YOU: "/thank_you",
+  LOGIN: "/login",
+  SIGNUP: "/signup",
+  // ALL_DEPARTMENTS: "/getDept",
+  DEPARTMENT_DETAILS: "/mdo/",
+  USER_DETAILS: "/officer/",
+  UPDATE_USER_DATA: "/update/users/",
+  UPDATE_ROLE_DATA: "/update/roles",
+  // UPDATE_ROLE_ACT_DATA: "/update/role_activities",
+  // UPDATE_ROLE_COMP_DATA: "/update/role_competencies",
+  DELETE_AN_RECORD: "/deleteAnRecord/",
+  DELETE_AN_ROLE: "/deleteAnRole/",
+  DOWNLOAD_AS_CSV: "/download/",
+  CREATE_DEPTS: "/add/mdo",
+  GET_ALL_ADMINS: "/get/admins",
+  GET_DEPT_LIST: "/get/allMdos",
+  DELETE_DEPT_BY_ID: "/delete/mdo/",
+  GET_MAPPED_ADMINS: "/get/mappedAdmins/",
+  GET_MDO_DETAILS_BY_ID: "/get/mdo/",
+  UPDATE_MDO_BY_ID: "/update/mdo/",
+  DOWNLOAD_AS_CSV_DEPT: "/download/mdo/",
+  CREATE_MDO_ADMIN: "/create/mdo/admin",
+  GET_MDO_BY_ADMIN: "/get/admin/mdo/"
+};
+

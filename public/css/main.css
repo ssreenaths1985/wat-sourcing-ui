@@ -1,0 +1,847 @@
+html {
+  --background-1: #f4f4f4;
+  --select-background: #ebfaff;
+  --background-2: #c2efff;
+  --white-100: #ffffff;
+  --black-04: RGBA(0, 0, 0, 0.04);
+  --black-87: RGBA(0, 0, 0, 0.87);
+  --black-40: RGBA(0, 0, 0, 0.4);
+  --black-16: RGBA(0, 0, 0, 0.16);
+  --success-1: RGB(29, 137, 35);
+  --negative-1: RGB(209, 57, 36);
+  --primary-1: RGB(0, 116, 182);
+  --shadow-1: RGBA(0, 0, 0, 0.08);
+  --custom-bg-1: #f0f3f4;
+  --custom-bg-2: RGBA(0, 116, 182, 0.05);
+}
+
+html[data-theme="dark"] {
+  --background-1: #f4f4f4;
+  --white-100: #ffffff;
+  --black-87: RGBA(0, 0, 0, 0.87);
+  --black-40: RGBA(0, 0, 0, 0.4);
+  --black-16: RGBA(0, 0, 0, 0.16);
+  --success-1: RGB(29, 137, 35);
+  --negative-1: RGB(209, 57, 36);
+  --primary-1: RGB(0, 116, 182);
+  --shadow-1: RGBA(0, 0, 0, 0.08);
+  --custom-bg-1: #f0f3f4;
+  --custom-bg-2: RGBA(0, 116, 182, 0.05);
+}
+
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url(../fonts/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  font-weight: 900;
+  src: local("Lato"), url(../fonts/Lato-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  font-weight: 900;
+  src: local("Lato"), url(../fonts/Lato-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  src: local("Lato"), url(../fonts/Montserrat-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Material Icons Round";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIconsRound-Regular.otf) format("opentype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-round {
+  font-family: "Material Icons Round";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Alignment styles starts here */
+
+.horizontal-center-1 {
+  margin: 0 auto;
+}
+
+.survey-section-1 {
+  background-color: var(--background-1);
+}
+
+.survey-section-2 {
+  color: var(--black-87);
+  background-color: var(--black-04);
+  font-family: "Lato" !important;
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+.custom-min-width-1 {
+  min-width: 5.625rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Alignment styles ends here */
+
+/* Buttons styles starts here */
+
+.custom-nav-btn-1 {
+  background-color: transparent;
+  border: 1px solid var(--primary-1);
+  border-radius: 4px;
+  color: var(--primary-1);
+  padding: 0.5rem;
+  min-width: 5.625rem;
+  font-family: "Lato-Bold";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+.custom-nav-btn-1:hover {
+  opacity: 0.8;
+}
+
+.custom-nav-btn-1-disabled {
+  opacity: 0.5;
+  background-color: var(--white-100);
+  border: 1px solid var(--primary-1);
+  border-radius: 4px;
+  color: var(--primary-1);
+  padding: 0.5rem;
+  min-width: 5.625rem;
+  font-family: "Lato-Bold";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+.custom-nav-btn-2 {
+  background-color: var(--primary-1);
+  border: 1px solid var(--primary-1);
+  border-radius: 4px;
+  color: var(--white-100);
+  padding: 0.5rem;
+  min-width: 5.625rem;
+  font-family: "Lato-Bold";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+.custom-nav-btn-2:hover {
+  opacity: 0.8;
+}
+
+.custom-nav-btn-2-disabled {
+  opacity: 0.5;
+  background-color: var(--primary-1);
+  border: 1px solid var(--primary-1);
+  border-radius: 4px;
+  color: var(--white-100);
+  padding: 0.5rem;
+  min-width: 5.625rem;
+  font-family: "Lato-Bold";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+.add-icon-1 {
+  color: var(--primary-1);
+  margin-top: 2.15rem;
+  cursor: pointer;
+}
+
+.remove-icon-1 {
+  color: var(--negative-1);
+  margin-top: 2.15rem;
+  cursor: pointer;
+}
+
+.add-icon-2 {
+  color: var(--primary-1);
+  cursor: pointer;
+}
+
+.remove-icon-2 {
+  color: var(--negative-1);
+  cursor: pointer;
+}
+
+.add-btn-1 {
+  color: var(--primary-1) !important;
+  border: 1px solid var(--primary-1) !important;
+  border-radius: 4px;
+  background-color: var(--white-100) !important;
+  /* margin-left: 0.75rem; */
+  font-family: "Lato-Bold" !important;
+  font-size: 0.875rem !important;
+  line-height: 1.429 !important;
+}
+
+.custom-btn-height-1 {
+  height: 2.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.add-btn-2 {
+  width: fit-content !important;
+  margin-left: 0.75rem;
+}
+
+.custom-table-row-btn-1 span {
+  color: var(--black-87);
+  font-family: "Lato-Bold";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+.custom-table-row-selected-1 {
+  border: 1.5px solid var(--primary-1);
+  border-radius: 8px;
+  background-color: var(--custom-bg-2) !important;
+}
+
+.custom-table-row-unselected-1 {
+  border: 1.5px solid var(--black-16);
+  border-radius: 8px;
+  background-color: transparent !important;
+}
+
+.custom-table-row-unselected-1:hover {
+  border: 1.5px solid var(--primary-1);
+  border-radius: 8px;
+  background-color: var(--custom-bg-2) !important;
+}
+
+/* Buttons styles ends here */
+
+/* Typography styles starts here */
+
+.heading-1 {
+  color: var(--black-87);
+  font-family: "Montserrat-SemiBold";
+  font-size: 2.25rem;
+  line-height: 1.5;
+}
+
+.heading-2 {
+  color: var(--black-87);
+  font-family: "Montserrat-SemiBold";
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.body-1 {
+  color: var(--black-87);
+  font-family: "Lato";
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.body-2 {
+  color: var(--black-87);
+  font-family: "Lato";
+  font-size: 0.875rem;
+  line-height: 1.429;
+  margin-bottom: 0.15rem;
+}
+
+.caption-1 {
+  color: var(--black-87);
+  font-family: "Lato";
+  font-size: 0.75rem;
+  line-height: 1.333;
+}
+
+.label-1 {
+  color: var(--black-87);
+  font-family: "Lato";
+  font-size: 0.625rem;
+  line-height: 1.2;
+}
+
+.label-3 {
+  color: var(--black-87);
+  font-family: "Lato";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+.thank-you-icon-1 {
+  color: var(--primary-1);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.link-style-1 {
+  color: var(--black-87);
+  font-family: "Lato";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+/* Typography styles ends here */
+
+/* Form styles starts here */
+
+.custom-input-field-1 {
+  border-radius: 4px !important;
+  /* margin-top: 0.15rem; */
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1.5px solid var(--black-16) !important;
+  font-family: "Lato" !important;
+  font-size: 0.875rem !important;
+}
+
+.custom-input-field-1:focus {
+  border: 1.5px solid var(--primary-1) !important;
+}
+
+.custom-input-field-1:hover {
+  border: 1.5px solid var(--primary-1) !important;
+}
+
+.custom-input-field-1::placeholder {
+  font-family: "Lato" !important;
+  font-size: 0.875rem !important;
+  color: var(--black-40) !important;
+}
+
+.custom-input-field-2 {
+  outline: none !important;
+  box-shadow: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1.5px solid var(--black-16) !important;
+  width: 93% !important;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.custom-input-field-2::placeholder {
+  font-family: "Lato" !important;
+  font-size: 0.875rem !important;
+  color: var(--black-40) !important;
+}
+
+.input-box-1 {
+  background-color: var(--white-100);
+  border: 1px solid var(--black-16);
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: transparent !important;
+}
+
+/* Form styles ends here */
+
+/* Custom toast styles starts here */
+
+.Toastify__toast--dark {
+  margin-top: 2.5em;
+  background-color: rgb(53, 52, 61) !important;
+  border-radius: 0.25em !important;
+}
+
+.Toastify__toast--warning {
+  color: var(--active-87) !important;
+}
+
+.Toastify__toast-body {
+  margin: 0em !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  font-family: "Lato-Regular" !important;
+  font-size: 0.875rem !important;
+}
+
+.Toastify__toast {
+  min-height: 100% !important;
+}
+
+.Toastify__toast-container {
+  width: fit-content !important;
+  width: -moz-fit-content !important;
+}
+
+/* Custom toast styles ends here */
+
+/* custom log out btn */
+.custom-log-out-btn {
+  color: var(--primary-1) !important;
+  background: transparent;
+  border: none !important;
+  font-weight: 700 !important;
+}
+
+.custom-dept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 240px));
+  grid-gap: 2.5em;
+  margin-top: 3em;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .custom-dept-grid {
+    justify-content: start;
+  }
+}
+
+.custom-dept-btn {
+  color: var(--black-87) !important;
+  font-family: "Lato-Bold" !important;
+  font-size: 0.875rem !important;
+  box-shadow: 0px 3px 6px 0px var(--shadow-1);
+  border-radius: 8px;
+  background-color: white;
+  border: none !important;
+  font-weight: 700 !important;
+  height: 7.875rem;
+}
+
+.custom-dept-btn:hover {
+  background-color: var(--shadow-1);
+}
+
+.dept-cointainer {
+  min-width: 75%;
+  max-width: 100%;
+}
+
+.dept-cointainer h4 {
+  color: var(--black-87) !important;
+  font-family: "Montserrat-SemiBold" !important;
+  font-size: 1.5rem !important;
+  line-height: 1.5 !important;
+}
+
+.dept-cointainer p {
+  color: var(--black-87) !important;
+  font-family: "Lato" !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.scroll {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.row-height {
+  height: 100vh;
+}
+
+.scroll::-webkit-scrollbar-track {
+  border: 1px solid var(--white-100);
+  padding: 2px 0;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px var(--black-16);
+  background-color: var(--black-40);
+  border: 1px solid var(--black-40);
+}
+
+.select {
+  background-color: var(--select-background);
+}
+
+.list:hover {
+  background-color: var(--background-1);
+}
+
+.custom-dept-grid-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 23vw;
+  height: calc(100vh - 260px);
+}
+
+.arrow-back-1 {
+  color: var(--black-16);
+  font-size: 1.45rem;
+  vertical-align: -0.4rem;
+}
+
+.button-label-1 {
+  cursor: pointer;
+  font-family: "Lato";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+/* Custom navbar styles starts here */
+
+.custom-navbar-1 {
+  box-shadow: 0px 2px 9px var(--shadow-1);
+  height: 3.5rem;
+}
+
+.nav-header-1 {
+  color: var(--black-87);
+  font-family: "Montserrat-SemiBold";
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: 0.5rem;
+}
+
+.custom-vl-1 {
+  border-left: 1px solid var(--black-16);
+  height: 1.5rem;
+  margin-top: 0.35rem;
+}
+
+/* Custom navbar styles ends here */
+
+/* Container styles starts here */
+
+.custom-container-1 {
+  background-color: var(--custom-bg-1);
+  min-height: calc(100vh - 56px);
+  height: inherit;
+}
+
+.custom-container-2 {
+  background-color: var(--white-100);
+  min-height: calc(100vh - 56px);
+  height: inherit;
+}
+
+.survey-section-3 {
+  box-shadow: 0px 3px 6px 0px var(--shadow-1);
+  background-color: var(--white-100);
+  border-radius: 8px;
+}
+
+.heading-3 {
+  color: var(--black-87);
+  font-family: "Montserrat-SemiBold";
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.heading-4 {
+  color: var(--black-87);
+  font-family: "Montserrat-SemiBold";
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.message-1 {
+  color: var(--black-87);
+  font-family: "Lato";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+.label-2 {
+  color: var(--black-87);
+  font-family: "Lato-Bold";
+  font-size: 0.875rem;
+  line-height: 1.429;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.custom-input-field-3 {
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+  border-bottom: 1.5px solid var(--black-16) !important;
+  width: 93% !important;
+  font-family: "Lato" !important;
+  font-size: 0.875rem !important;
+}
+
+.custom-input-field-3:focus {
+  border: 1.5px solid var(--primary-1) !important;
+}
+
+.custom-input-field-3:hover {
+  border: 1.5px solid var(--primary-1) !important;
+}
+
+.custom-input-field-3::placeholder {
+  font-family: "Lato" !important;
+  font-size: 0.875rem !important;
+  color: var(--black-40) !important;
+}
+
+.link-style-2 {
+  color: var(--primary-1) !important;
+  font-family: "Lato-Bold";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+.form-select {
+  font-family: "Lato" !important;
+  font-size: 0.875rem !important;
+}
+
+.info-icon-1 {
+  color: var(--black-16);
+  cursor: pointer;
+  font-size: 1rem;
+  vertical-align: sub;
+}
+
+/* Container styles ends here */
+
+/* Superadmin tab styles starts here */
+
+#superAdminTab .nav-item {
+  font-family: "Lato";
+  font-size: 0.875rem;
+}
+
+#superAdminTab .nav-link.active {
+  color: var(--black-87) !important;
+  font-family: "Lato-Bold";
+  border-bottom-color: var(--primary-1) !important;
+}
+
+#superAdminTab .nav-link {
+  color: var(--black-87) !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* SuperAdmin tab styles ends here */
+
+/* Tables styles starts here */
+
+#adminListTable th {
+  color: var(--black-87) !important;
+  font-family: "Lato-Bold";
+  font-size: 0.875rem;
+  line-height: 1.429;
+}
+
+#adminListTable td {
+  color: var(--black-87) !important;
+  font-family: "Lato";
+  font-size: 0.875rem;
+}
+
+.cursor-1 {
+  cursor: pointer;
+}
+
+.custom-mat-icon-1 {
+  font-size: 1.25rem;
+}
+
+.accordion h2 {
+  color: var(--black-87) !important;
+  font-family: "Lato";
+  font-size: 0.875rem;
+}
+
+#adminListTable {
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+
+.accordion {
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+
+/* Tables styles ends here */
+
+/* MDO Access styles starts here */
+
+.custom-padding-1 {
+  padding-top: 5rem;
+}
+
+.custom-table-header-1 {
+  background-color: var(--primary-1);
+  border-bottom: none;
+  color: var(--white-100);
+  font-family: "Lato-Bold";
+  font-size: 1rem;
+  height: 4rem;
+  vertical-align: middle;
+}
+
+.custom-table-row-1 {
+  cursor: pointer;
+  font-family: "Lato-Bold";
+  font-size: 1rem;
+  height: 3rem;
+  vertical-align: middle;
+}
+
+.custom-table-label-1 {
+  font-family: "Lato";
+  font-size: 1rem;
+}
+
+#mdoAccessList tbody,
+td,
+tfoot,
+tr {
+  border-bottom: 1px dashed var(--black-40) !important;
+}
+
+.custom-hide-1 {
+  display: none;
+}
+
+.custom-action-button-1 {
+  margin-right: -1.5rem;
+  vertical-align: sub;
+  font-size: 1.25rem;
+}
+
+.custom-dd-1 label {
+  cursor: pointer;
+  font-family: "Lato";
+  font-family: 0.875rem;
+}
+
+.custom-mat-icon-2 {
+  vertical-align: bottom;
+  font-size: 1.5rem;
+}
+/* MDO Access styles ends here */
+
+/* Admin view styles starts here */
+
+.custom-table-header-2 {
+  background-color: var(--black-16);
+  border-bottom: none;
+  color: var(--black-87);
+  font-family: "Lato-Bold";
+  font-size: 1rem;
+  height: 4rem;
+  vertical-align: middle;
+}
+
+.custom-table-row-2 {
+  cursor: pointer;
+  font-family: "Lato";
+  font-size: 1rem;
+  height: 3rem;
+  vertical-align: middle;
+}
+
+.custom-table-border-1 {
+  border-bottom: 2px solid transparent !important;
+}
+
+/* Admin view styles ends here */
+
+/* Modal styles starts here */
+
+.custom-modal-1 .modal-title {
+  font-family: "Lato-Bold";
+  font-size: 1.25rem;
+}
+
+.custom-modal-1 .modal-content,
+.modal-header,
+.modal-footer {
+  border: none !important;
+}
+
+/* Modal styles ends here */
+
+/* Media queries starts here */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-header-1 {
+    font-size: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
+  .custom-nav-logo-1 {
+    height: 1.15rem;
+    margin-top: 0.55rem;
+  }
+
+  .custom-dept-grid-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5rem;
+    height: calc(100vh - 260px);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Media queries ends here */
